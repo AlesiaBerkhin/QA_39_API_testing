@@ -5,16 +5,15 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.List;
+
 @Setter
 @Getter
 @Builder
 @ToString
-public class ErrorDTO {
 
-    int status;
-    String error;
-    Object message;
+public class ContactListDTO {
 
-    // "path": "string"
+    List<ContactDTO> contacts;
 
 }
